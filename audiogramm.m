@@ -22,7 +22,7 @@ function varargout = audiogramm(varargin)
 
 % Edit the above text to modify the response to help audiogramm
 
-% Last Modified by GUIDE v2.5 30-May-2017 16:51:47
+% Last Modified by GUIDE v2.5 30-May-2017 21:26:42
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -357,3 +357,11 @@ function about_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 uiwait(msgbox('Programmierübung "Audiogramm" zur Vorlesung Audiosignalverarbeitung und Neuroakustik SS17. (Team Wolfgang Schultz/ Dominik Weinacht)','Credit'));
+
+
+% --------------------------------------------------------------------
+function lizenz_Callback(hObject, eventdata, handles)
+% hObject    handle to lizenz (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+uiwait(msgbox('This work is free. You can redistribute it and/or modify it under the terms of the Do What The Fuck You Want To Public License, Version 2, as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.','Lizenz'));
