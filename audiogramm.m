@@ -64,8 +64,16 @@ if exist(filename,'file')
   handles.sounds = load(filename);
 else
   
-  % hier kann erstmalig die soundmatrix erzeugt werden
-  % noch nicht implementiert
+% hier kann erstmalig die soundmatrix erzeugt werden
+% noch nicht implementiert
+  
+%  soundmatrix3 = gensoundmatrix();
+%  
+%  save(filename,'soundmatrix3');
+%  
+%  handles.sounds = load(filename);
+  
+%   handles.sounds = save(filename);
     
   uiwait(errordlg('soundmatrix3.mat nicht gefunden','Tondatei fehlt'));
   

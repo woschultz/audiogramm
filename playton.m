@@ -8,19 +8,22 @@ function  playton(handles)
   
   % hier den sound aus matrix holen
  
+  
+  
   if hearLevel < 0
       hearLevel = 0;
   end
   
   [n,m] = toneindex(hearLevel,frequenz);
   
-  sounds = handles.sounds.ans(n,m);
+  sounds = handles.sounds.soundmatrix3(n,m);
   
   soundfrommatrix(:,1) = sounds{1};
 
   % ende sound
   
 
+  
   switch modus
     
     case 1  % linkes Ohr abspielen
